@@ -1,6 +1,6 @@
 (function () {
-    var app = angular.module('guessGame', []);
-    app.controller('GuessTheNumberController', function () {
+    var appp = angular.module('guessGame', []);
+    appp.controller('GuessTheNumberController', function () {
         this.verifyGuess = function () {
             this.deviation = this.original - this.guess;
             this.noOfTries = this.noOfTries + 1;
@@ -13,7 +13,7 @@
         };
         this.initializeGame();
     });
-    app.run(function ($rootScope) {
+    appp.run(function ($rootScope) {
 
     });
 })();
